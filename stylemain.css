@@ -4,14 +4,30 @@ body {
 }
 
 header {
+    height: 70px;
+    margin: 0;
     display: flex;
+    justify-content: center;
+}
+
+header div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    max-height: 70px;
+}
+
+header form {
+    position: absolute;
+    margin: auto;
+    width: 100%;
 }
 
 main {
     background-color: #464850;
     height: auto;
+    margin-top: 10px;
+    padding: 10px 0;
 }
 
 footer {
@@ -21,16 +37,70 @@ footer {
     text-align: center;
 }
 
-.headlogo {
-    margin-bottom: -5px;
+header a .headlogo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 30px;
+}
+
+header .headlogo {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    position: absolute;
+    left: 30px;
 }
 
-.headtext {
-    margin-left: 10px;
+.sidebar {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 8px;
+}
+
+header .title {
     font-size: 30px;
+    position: absolute;
+    left: 130px
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: #cac7ff;
+    text-align: left;
+    width: 90%;
+}
+
+.search-bar button img {
+    width: 25px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #cac7ff;
 }
 
 .cropfoot {
@@ -53,10 +123,9 @@ a:hover {
 }
 
 .new {
-    width: 1600px;
+    width: 80%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -161,8 +230,3 @@ a:hover {
     color: white;
 }
 
-.sidebar {
-    font-size: 50px;
-    color: white;
-    margin-right: 10px;
-}
