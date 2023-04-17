@@ -1,0 +1,168 @@
+body {
+    background-color: #2f3035;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    max-height: 70px;
+}
+
+main {
+    background-color: #464850;
+    height: auto;
+}
+
+footer {
+    height: auto;
+    text-align: center;
+    color: #464850;
+    text-align: center;
+}
+
+.headlogo {
+    margin-bottom: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.headtext {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.cropfoot {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.new {
+    width: 1600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.eling {
+    /*picture frame*/
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    display: inline-flex;
+    width: 300px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 300px;
+    height: 0;
+    transition: .5s ease;
+}
+
+.image-container:hover .overlay {
+    height: 10%;
+}
+
+.overlay p {
+    color: white;
+    font-size: 18px;
+    position: bottom;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    text-align: inherit;
+}
+
+.image-container:hover:nth-child(2) img {
+    content: url(images/test2.webp);
+}
+
+.image-container:hover:nth-child(3) img {
+    content: url(images/test3.webp);
+}
+
+.image-container:hover:nth-child(4) img {
+    content: url(images/fb.png);
+}
+
+.image-container:hover:nth-child(5) img {
+    content: url(images/test5.webp);
+}
+
+.image-container:hover:nth-child(6) img {
+    content: url(images/test6.webp);
+}
+
+.image-container:hover:nth-child(7) img {
+    content: url(images/test7.webp);
+}
+
+.image-container:hover:nth-child(8) img {
+    content: url(images/test8.webp);
+}
+
+.image-container:hover:nth-child(9) img {
+    content: url(images/test1.webp);
+}
+
+.read {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.readp {
+    /*picture frame*/
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d8dee2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.button:hover {
+    color: white;
+}
+
+.sidebar {
+    font-size: 50px;
+    color: white;
+    margin-right: 10px;
+}
